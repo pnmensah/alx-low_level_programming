@@ -8,15 +8,17 @@
 
 int main(void)
 {
-char c;
-
-for (c = 'a'; c <= 'z'; c++)
+int lw = 'a';
+int up = 'A';
+while (lw <= 'z')
 {
-putchar(c);
+putchar(lw);
+lw += 1;
 }
-for (c = 'A'; c <= 'Z'; c++)
+while (up <= 'Z')
 {
-putchar(c);
+putchar(up);
+up += 1;
 }
 putchar('\n');
 return (0);
