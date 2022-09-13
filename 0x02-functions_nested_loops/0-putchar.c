@@ -8,12 +8,12 @@
 
 int main(void)
 {
-char c[8] = "_putchar";
+char *str = "_putchar";
 int i;
 for (i = 0; i < 8; i++)
 {
-putchar(c[i]);
+_putchar(str[i]);
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }
