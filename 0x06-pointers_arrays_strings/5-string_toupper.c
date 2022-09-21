@@ -6,7 +6,7 @@
  * Return: string with all letters capitalized
  */
 
-char *string_toupper(char *s)
+char *string_toupper(char *)
 
 {
 
