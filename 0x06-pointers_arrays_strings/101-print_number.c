@@ -1,26 +1,38 @@
 #include "main.h"
 
 /**
- * print_number - print an integer, without using long, arrays, or pointers
- * @n: number to be printed
- */
+*print_number - prints an integer.
+*
+*@n: integer
+*
+*Return: void
+*/
 
 void print_number(int n)
 {
-unsigned int num;
+	unsigned int m, d, count;
 
-if (n < 0)
-{
-_putchar('-');
-num = -n;
-}
-else
-{
-num = n;
-}
-if (num / 10)
-{
-print_number(num / 10);
-}
-_putchar((num % 10) + '0');
+	if (n < 0)
+	{
+		_putchar(45);
+		m = n * -1;
+	}
+	else
+	{
+		m = n;
+	}
+
+	d = m;
+	count = 1;
+
+	while (d > 9)
+	{
+		d /= 10;
+		count *= 10;
+	}
+
+	for (; count >= 1; count /= 10)
+	{
+		_putchar(((m / count) % 10) + 48);
+	}
 }
