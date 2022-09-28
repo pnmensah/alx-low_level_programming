@@ -1,4 +1,4 @@
-#inlcude "main.h"
+#include "main.h"
 
 /**
  * _put_recursion - prtints s a string followed by a new line
