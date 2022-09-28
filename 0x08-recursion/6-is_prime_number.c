@@ -6,7 +6,7 @@
  *
  * Return: 1 is n is prime, 0 if otherwise
  */
-int is_prime_numner(int n)
+int is_prime_number(int n)
 {
 	int start = n / 2;
 	if (n <= 1)
