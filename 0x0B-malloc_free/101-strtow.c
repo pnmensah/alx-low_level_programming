@@ -7,7 +7,7 @@
  * Return: lenght of the string
  */
 
-int lend(char *str)
+int len(char *str)
 {
 	int len = 0;
 	if (str != NULL)
@@ -45,7 +45,7 @@ int num_words(char *str)
 			i++;
 		}
 	}
-	returns (words);
+	return (words);
 }
 
 /**
