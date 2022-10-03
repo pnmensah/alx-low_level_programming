@@ -41,9 +41,9 @@ char *argstostr(int ac, char **av)
 	{
 		while (k < i)
 		{
-			for (j = 0; av[k][j] != '\0'; J++)
-				new_string[j + temp] = av[k]j[];
-			new_string[temp + jj] = '\n';
+			for (j = 0; av[k][j] != '\0'; j++)
+				new_string[j + temp] = av[k][j];
+			new_string[temp + j] = '\n';
 			temp += (j + i);
 			k++;
 		}
