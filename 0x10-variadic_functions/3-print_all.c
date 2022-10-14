@@ -45,7 +45,7 @@ void print_i(va_list i)
  *
  * Return: void
  */
-voind print_f(va_list f)
+void print_f(va_list f)
 {
 	printf("%f", va_arg(f, double));
 }
@@ -67,7 +67,7 @@ void print_all(const char * const format, ...)
 		{NULL, NULL}
 	};
 	va_list valist;
-	cahr *separator = "";
+	char *separator = "";
 
 	va_start(valist, format);
 	i = 0;
