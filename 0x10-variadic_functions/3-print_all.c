@@ -21,7 +21,7 @@ void print_c(va_list c)
  */
 void print_s(va_list s)
 {
-	char *str = va_arg(c, char *);
+	char *str = va_arg(s, char *);
 
 	if (str == NULL)
 		str = "(nil)";
@@ -34,7 +34,7 @@ void print_s(va_list s)
  *
  * Return: void
  */
-void print_i(valist i)
+void print_i(va_list i)
 {
 	printf("%d", va_arg(i, int));
 }
@@ -60,10 +60,10 @@ void print_all(const char * const format, ...)
 {
 	unsigned int i, j;
 	print_t p[] = {
-		{"c", print_c}
-		{"s", print_s}
-		{"i", print_i}
-		{"f", print_f}
+		{"c", print_c},
+		{"s", print_s},
+		{"i", print_i},
+		{"f", print_f},
 		{NULL, NULL}
 	};
 	va_list valist;
@@ -74,7 +74,7 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		j = 0;
-		while (*(p[j].t) != NULL)
+		while (p[j].t != NULL)
 		{
 			if (*(p[j].t) == format[i])
 			{
